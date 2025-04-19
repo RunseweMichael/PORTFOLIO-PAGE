@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+
+    <style>
+        /* Base styles - mobile first */
+        body {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: brown;
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+        }
+    
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: flex-end;
+            padding: 1rem 0;
+            z-index: 999;
+        }
+    
+        .navbar_el {
+            color: beige;
+            text-decoration: none;
+            padding: 0.5rem;
+            font-size: 20px;
+        }
+    
+        #welcome-section {
+            text-align: center;
+            height: 60vh;
+            color: beige;
+            padding-top: 40%;
+        }
+
+        #hi{
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        #a{
+            font-size: 26px;
+        }
+
+        #projects {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+    
+        #these {
+            font-size: 28px;
+            margin-bottom: 1rem;
+            color: beige;
+        }
+    
+        #line1 {
+            margin: 0 auto;
+            width: 80%;
+            border: 1px solid #333;
+            margin-top: 5px;
+        }
+    
+        .project-tile {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .p {
+            width: 100%;
+            text-align: center;
+            margin-top: 0.5rem;
+            text-decoration: none;
+            color: beige;
+            font-weight: bold;
+            background-color: #333;
+            padding: 20px 0px;
+            font-size: 20px;
+        }
+    
+        #proj_query,
+        #proj_query2 {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+        }
+    
+        #profile-links {
+            text-align: center;
+            margin: 2rem 0;
+        }
+    
+        .showbtn {
+            font-weight: bold;
+            border: 2px solid #333;
+            padding: 20px;
+            font-size: 18px;
+            background-color: #333;
+            color: beige;
+        }
+    
+        #footer {
+            padding: 2rem;
+            background-color: #222;
+            color: beige;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    
+        #socials, #page2 {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin: 1rem 0;
+            gap: 30px;
+            margin-top: 50px;
+        }
+    
+        .soc {
+            color: white;
+            text-decoration: none;
+        }
+    
+        .cert1 {
+            font-size: 16px;
+            padding-top: 5px;
+        }
+    
+        /* Tablet screens */
+        @media (min-width: 600px) {
+            .project-tile {
+                max-width: 500px;
+            }
+    
+            #proj_query,
+            #proj_query2 {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+    
+            .p {
+                max-width: 500px;
+            }
+    
+            #navbar {
+                justify-content: center;
+                gap: 2rem;
+            }
+        }
+    
+        /* Desktop screens */
+        @media (min-width: 800px) {
+            #welcome-section {
+                text-align: center;
+                height: 60vh;
+                color: beige;
+                padding-top: 20%;
+            }
+
+            .navbar_el{
+                font-size: 26px;
+            }
+
+            #hi{
+                font-size: 50px;
+                margin-bottom: 5px;
+        }
+
+            #a{
+                font-size: 30px;
+        }
+
+            .project-tile {
+                height: 400px;
+                width: 400px;
+            }
+    
+            .p {
+                width: 400px;
+            }
+    
+            #how {
+                margin: 0 auto;
+            }
+    
+            .how {
+                margin: 0 auto;
+            }
+
+            #these{
+                font-size: 30px;
+            }
+    
+            #proj_query,
+            #proj_query2 {
+                flex-direction: row;
+                gap: 50px;
+                justify-content: center;
+            }
+
+            #socials, #page2 {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin: 1rem 0;
+            gap: 30px;
+            margin-top: 50px;
+        }
+    
+            .soc {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    </style>
+    
+
+</head>
+<body style="position: absolute;">
+    <header>
+        <nav id="navbar" style="position: fixed; top: 0; left: 0;">
+            <a href="#" target="blank" class="navbar_el">About</a>
+            <a href="#" target="blank" class="navbar_el">Work</a>
+            <a href="#" target="blank" class="navbar_el">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome-section">
+            <h1 id="hi">Hi!!!, I am Michael</h1>
+            <div id="a">a web developer</div>
+        </section>
+        <section id="projects">
+            <h1 id="these">These are some of my Projects</h1>
+            <hr id="line1"><br><br><br>
+
+            <div id="proj_query">
+                <div>
+                    <a href="C:\Users\HP\Desktop\My Web Projects\DOCUMENTATION-PAGE" target="_blank" class="rem">
+                        <img src="./Weight_Converter.jpeg" alt="" height="400px" width="600px" class="project-tile">
+                        <p class="p">Weight Conveter</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="www.google.com" target="_blank" class="rem">
+                        <img src="./Survey_form.jpeg" alt="" srcset="" height="400px" width="600px" class="project-tile">
+                        <p class="p">Survey Form</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="www.google.com"  target="_blank" class="rem">
+                        <img src="./Screenshot_15-2-2025_64832_127.0.0.1.jpeg" alt="" srcset="" height="400px" width="600px" class="project-tile">
+                        <p class="p">Javascript Calculator</p>
+                    </a>
+                </div>
+            </div>
+
+            <div id="proj_query2">
+                <div>
+                    <a href="www.google.com" target="_blank" class="rem">
+                        <img src="./Palindrome_checker.jpeg" alt="" srcset="" height="400px" width="600px" class="project-tile">
+                        <p class="p">Palindrome Checker</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="www.google.com" target="_blank" class="rem">
+                        <img src="./Landing_page.jpeg" alt="" srcset="" height="400px" width="600px" class="project-tile">
+                        <p class="p">ShippingCompany</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="www.google.com" target="_blank" class="rem">
+                        <img src="./Screenshot_15-2-2025_7631_127.0.0.1.jpeg" alt="" srcset="" height="400px" width="600px" class="project-tile">
+                        <p class="p">Grid Calculator</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div id="profile-links">
+            <a href="" id="profile-link" target="_blank" class="showbtn">Show all ></a>
+        </div>
+
+    </main>
+    <footer id="footer">
+        <div id="text">
+            <h1 id="let">Let's work together...</h1>
+            <p id="how">How do you take your coffee?</p>
+        </div>
+
+        <div id="lastPage">
+            <div id="socials">
+                <a href="#" target="blank" class="soc"><i class="fa fa-facebook-official" style="font-size:24px"></i> Facebook</a>
+                <a href="#" target="blank" class="soc"><i class="fa fa-github" style="font-size:24px"></i> GitHub</a>
+                <a href="#" target="blank" class="soc"><i class="fa fa-twitter" style="font-size:24px;color:white"></i> Twitter</i></a>
+            </div>
+            <div id="page2">
+                <a href="#" target="blank" class="soc">@ Send a mail</a>
+                <a href="#" target="blank" class="soc"><i class='fa-phone' style='font-size:24px'></i><i class='fas fa-phone-volume' style='font-size:24px;'></i> Call me</a>
+            </div>
+            <hr id="line">
+        </div>
+
+        <div id="cert">
+            <p class="cert1">This is a portfolio page created by Michael.</p>
+            <p class="cert1">&#169 Created for FreeCodeCamp Certification</p>
+        </div>
+    </footer>
+</body>
+</html>
